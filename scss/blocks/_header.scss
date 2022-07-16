@@ -1,0 +1,134 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F8F8F8;
+}
+
+.header__inner-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.header__link {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #22343D;
+}
+
+.header__logo-img {
+  transition: transform ease 0.4s;
+}
+
+.header__logo-img:hover {
+  transform: scale(1.2);
+}
+
+.header__link:hover {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header__items {
+  margin-right: 20px;
+}
+
+.header__items--last {
+  margin-right: 0px;
+}
+
+.header__first-button {
+  margin-left: 20px;
+  color: #173A56;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 9px 20px;
+  border-radius: 10px; 
+  border-color:#BCD0E5;
+}
+
+.header__second-button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+  padding: 9px 20px;
+  border-radius: 10px; 
+  border: none;
+  color: #ffffff;
+  background-color: #02897A;
+}
+
+.header__dark-icon {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.header__dark-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.header__first-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.header__second-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.header__menu {
+  display: none;
+  background-color: #F8F8F8;
+}
+
+@include breakpoint-down(900px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__first-button {
+    display: none;
+  }
+
+  .header__second-button {
+    display: none;
+  }
+
+  .header__dark-icon {
+    display: none;
+  }
+
+  .header__menu {
+    display: block;
+  }
+}

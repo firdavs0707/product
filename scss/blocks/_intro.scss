@@ -1,0 +1,131 @@
+.intro {
+  padding-top: 100px;
+  background-color: #f8f8f8; 
+  padding-bottom: 200px;  background-image: url("../../img/Bg.png");
+  background-position: calc(50% + 0px) 375px;
+  background-repeat: no-repeat;
+  background-size: 2000px;
+}
+
+.intro__heading {
+  max-width: 500px;
+  height: 96px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #22343D;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 70px;
+}
+
+.intro__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.intro__item-heading {
+  height: 33px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #22343D;
+}
+
+.intro__item-text {
+  max-width: 220px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.intro__div-button {
+  width: 150px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro__button {
+  height: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #02897A;
+  border-radius: 5px;
+  border: 3px white;
+}
+
+.intro__button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.intro__button:active {
+  color: #173A56;
+  background-color: #ffffff;
+  border: 3px solid #173A56;
+  width: 160px;
+}
+
+@include breakpoint-down(960px) {
+  .intro__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-img {
+    margin-left: 37%;
+  }
+
+  .intro__item-heading {
+    text-align: center;
+  }
+
+  .intro__item-text {
+    text-align: center;
+  }
+}
+
+@include breakpoint-down(500px) {
+  .intro__heading {
+    width: 300px;
+    height: 96px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+  }
+
+  .intro {
+    padding-bottom: 200px;  background-image: url("../../img/Bg.png");
+    background-position: calc(50% + 0px) 895px;
+    background-repeat: no-repeat;
+    background-size: 2000px;
+  }
+}

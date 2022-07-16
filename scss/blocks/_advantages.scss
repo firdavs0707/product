@@ -1,0 +1,256 @@
+.advantages {
+  background-color: #f8f8f8;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.advantages__texts-heading {
+  width: 224px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343D;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.advantages__texts-inner-first-text {
+  width: 189px;
+  height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+}
+
+.advantages__inner-heading {
+  height: 26px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.advantages__inner-text {
+  max-width: 470px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.advantages__inner-second-text {
+  max-width: 470px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.advantages__first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.advantages__second {
+  padding-top:150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.advantages__list {
+  display: flex;
+  align-items: center;
+}
+
+.advantages__list-text {
+  margin-left: 25px;
+  max-width: 370px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.advantages__text-inner-first-text {
+  width: 220px;
+  height: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+}
+
+.advantages-main-img {
+  width: 300px;
+}
+
+.advantages__text-heading {
+  height: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343D;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.advantages__inner-big-text {
+  max-width: 450px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.advantages__third {
+  padding-top:150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__text-heeding {
+  margin-bottom: 20px;
+}
+
+.advantages__extra-text {
+  max-width: 500px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+@include breakpoint-down (1000px) {
+  .advantages__first {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__second {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantages__main-div {
+    width: 500px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .advantages__list-text {
+    text-align: left;
+  }
+
+  .advantages__text-inner-first-text {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .advantages__texts-inner-first-text {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .advantages__texts-heading {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .intro {
+    padding-bottom: 100px;
+  }
+
+  .advantages__third {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-down (600px) {
+  .advantages__big-img-res {
+    width: 300px;
+    height: 270px;
+  }
+
+  .advantages__inner-text {
+    width: 300px;
+    height: 104px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+  }
+
+  .advantages__inner-second-text {
+    width: 300px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+  }
+
+  .advantages__texts-inner-first-text {
+    width: 200px;
+    margin: 0;
+  }
+
+  .advantages__texts-heading {
+    margin: 0;
+  }
+
+  .advantages__extra-text {
+    width: 300px;
+  }
+
+  .advantages__inner-big-text {
+    width: 300px;
+  }
+
+  .advantages__main-div {
+    width: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include breakpoint-down (420px) {
+  .advantages__main-div {
+    width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
